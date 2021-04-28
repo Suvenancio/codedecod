@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="basecifra.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <label for="codificador">Escolha um codificador:</label>
+            <select name="codificador" id="codificador" >
+            <option value="base64">Base 64</option>
+            <option value="cifradecesar">Cifra de César</option>
+            
+            <div id="qtda">
+              <label for="quantidade">insira o número de </label>  
+              <input type="number" name="quantidade" id="qtdade" class="quantos" >       
+            </div>
+<br>
+    </select>
+         <h1>Digite sua mensagem:</h1> 
+            <input id="conteudo" type="text">
+            <br>
+
+    <div>
+
+        <input type="radio" id="radiocod" name="radiobutton" class="cod">
+        <label for="codificar">Codificar</label><br>
+
+        <input type="radio" id="radiodecod" name="radiobutton" class="decod">
+        <label for="decodificar">Decodificar</label><br>
+
+    </div>    
+
+      <div class="btns">    
+        <button class="invalido invisível"  id="codificar">CODIFICAR</button>
+       
+
+        <button class="invalido invisívele" id="decodificar">DECODIFICAR</button>
+        <br><br>
+</div>
+            <p id="resposta"></p>
+</div>
+
+              
+
+    <script src="basecifra.js"></script>
+</body>
+</html>

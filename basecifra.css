@@ -1,0 +1,66 @@
+body{
+    font-family: sans-serif;
+    background-color: teal;
+}
+
+.container{
+    display: flex;
+    flex-direction: row; 
+    width: 50%;
+   margin-left: 25%;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 2em;
+}
+
+h1{
+    margin-left: 35%;
+    
+}
+select{
+    width: 20%;
+    height: 10%;
+    padding: 10px;
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around  ;
+    margin-left: 20%;
+    margin-top: 5%;
+
+}
+#conteudo{
+    margin-left: 34%;
+    display: block;
+    width: 60vh;
+    height: 20vh;
+}
+
+
+
+
+.quantos{
+    display: none;
+    
+}
+
+#qtdade{
+    width: 9%;
+    height: 10%;
+    padding: 10px;
+}
+#resposta{
+    margin-top: 10vh;
+    text-align: center ;
+}
+
+.invisível{
+    display: none;
+}
+
+.invisívele{
+    display: none; 
+}
