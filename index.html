@@ -5,43 +5,56 @@
     <title>Document</title>
 </head>
 <body>
+
+    <main>
     <div class="container">
-        <label for="codificador">Escolha um codificador:</label>
-            <select name="codificador" id="codificador" >
-            <option value="base64">Base 64</option>
-            <option value="cifradecesar">Cifra de César</option>
-            
-            <div id="qtda">
-              <label for="quantidade">insira o número de </label>  
-              <input type="number" name="quantidade" id="qtdade" class="quantos" >       
+        <header>
+            <label for="codificador">Escolha um codificador:</label>
+                <select name="codificador" id="codificador" >
+                <option value="base64">Base 64</option>
+                <option value="cifradecesar">Cifra de César</option>
+                
+                <div id="qtda">
+                
+                <input type="number" name="quantidade" id="qtdade" class="quantos">  
+                <label class="quantos" for="quantidade">insira o número casas </label>   
+
+                </div>
+            </header>
+
+            <div class="btns">
+
+                <input type="radio" id="radiocod" name="radiobutton" class="cod">
+                <label for="codificar">Codificar</label><br>
+        
+                <input type="radio" id="radiodecod" name="radiobutton" class="decod">
+                <label for="decodificar">Decodificar</label><br>
+        
+
+                <button class="invalido invisível"  id="codificar">CODIFICAR</button>
+                <button class="semuso" id="decodificar">DECODIFICAR</button>
+        
+      
             </div>
-<br>
+
     </select>
-         <h1>Digite sua mensagem:</h1> 
+         
+
+        <div class="resp">
+            <p><strong>Digite sua mensagem</strong>  </p>
+        
             <input id="conteudo" type="text">
-            <br>
 
-    <div>
+        </div>
 
-        <input type="radio" id="radiocod" name="radiobutton" class="cod">
-        <label for="codificar">Codificar</label><br>
+        <div class="msncod">
+        <p class="final"><strong> Mensagem codificada</strong></p>
 
-        <input type="radio" id="radiodecod" name="radiobutton" class="decod">
-        <label for="decodificar">Decodificar</label><br>
-
-    </div>    
-
-      <div class="btns">    
-        <button class="invalido invisível"  id="codificar">CODIFICAR</button>
-       
-
-        <button class="invalido invisívele" id="decodificar">DECODIFICAR</button>
-        <br><br>
-</div>
-            <p id="resposta"></p>
+        <p id="resposta"></p>
+    </div>
 </div>
 
-              
+</main>    
 
     <script src="basecifra.js"></script>
 </body>

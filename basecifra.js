@@ -5,13 +5,15 @@ var cod = document.querySelector('#radiocod');
 var decod = document.querySelector('#radiodecod');
 
 cod.addEventListener( 'change', () =>{
-    console.log('deu')
+    
     btn.classList.remove("invisível")
+    btndecod.classList.add("semuso")
 })
 
 decod.addEventListener( 'change', () =>{
     console.log('deu')
-    btndecod.classList.remove("invisívele")
+    btndecod.classList.remove("semuso")
+    btn.classList.add("invisível")
 })
 
 
