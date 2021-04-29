@@ -4,6 +4,7 @@ var selector = document.querySelector('#codificador');
 var cod = document.querySelector('#radiocod');
 var decod = document.querySelector('#radiodecod');
 
+
 cod.addEventListener( 'change', () =>{
     
     btn.classList.remove("invisível")
@@ -11,7 +12,7 @@ cod.addEventListener( 'change', () =>{
 })
 
 decod.addEventListener( 'change', () =>{
-    console.log('deu')
+   
     btndecod.classList.remove("semuso")
     btn.classList.add("invisível")
 })
@@ -44,38 +45,44 @@ btndecod.addEventListener( 'click', () =>{
 
 var escolhas = selector.addEventListener( 'change', ()=>{
     var vlrIncremento = document.querySelector("#qtdade")
-    if(selector.value === "cifradecesar"){
+    var insira = document.querySelector("#insira")
 
-        vlrIncremento.classList.remove("quantos")
+    if(selector.value === "cifradecesar"){
+        
+        vlrIncremento.classList.remove("quantos");
+        insira.classList.remove("qnt");
+
     }
     else
-    {
-        vlrIncremento.classList.add("quantos")
+    {   
+        vlrIncremento.classList.add("quantos");
+        insira.classList.add('qnt')
     }
 })
 
 
 function cifraeDeCesarCod(){
     var valorRecebido = document.querySelector("#conteudo").value;
+    
     var qtd = document.querySelector("#qtdade").value;
     var incremento = parseInt(qtd);
-    var letras = valorRecebido.split('');
-
+    
+   
     var y = [];
     var z = [];
     var msncod = "";
     
  
     for(var i = 0; i < valorRecebido.length; i++){
-      z.push(valorRecebido.charCodeAt(i));
-      
-         y.push(z[i] + incremento)  ;
+        z.push(valorRecebido.charCodeAt(i));
+        y.push(z[i] + incremento)  ;
 }
 
         for(var j = 0; j <= y.length;j++){
             msncod += String.fromCharCode(y[j])  
-        console.log(msncod)
+           
     }
+    console.log(y)
 
              var resposta = document.querySelector("#resposta").innerHTML = msncod;
 
@@ -90,9 +97,7 @@ function cifraeDeCesarDecod(){
     var codeDocodigo = [];
     var code = [];
     var mensagemCodif = "";
-    console.log(code)
-    console.log(codeDocodigo)
-    console.log(mensagemCodif)
+
  
     for(var i = 0; i < recebido.length; i++){
         code.push(recebido.charCodeAt(i));

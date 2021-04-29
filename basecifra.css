@@ -69,8 +69,7 @@ button{
 
 
 .quantos{
-    display: none;
-    
+    display: none; 
 }
 
 #qtdade{
@@ -106,4 +105,9 @@ button{
     display: flex;
     flex-direction: row;
     color: black;
+}
+
+.qnt{
+    display: none;
+    
 }
