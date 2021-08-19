@@ -73,7 +73,7 @@ button{
 }
 
 #qtdade{
-    width: 10vh;
+    width: 12vh;
     margin: 10% ;
     height: 5%;
     padding: 15px;;
@@ -110,4 +110,8 @@ button{
 .qnt{
     display: none;
     
+    
+}
+#insira{
+    font-size: 0.7em;
 }
